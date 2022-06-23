@@ -1,0 +1,9 @@
+Group Progress for Final Project Spring 2022
+
+3/3/2022
+
+- Acrylic mirror finally arrived!
+- still waiting for the 24 inch touch frame to arrive.
+- Mac will install magic mirror software on the raspberry pi this weekend
+- goal is to trim the acrylic mirror, hopefully will be done by utilizing the tools
+in the makerspace on campus. 

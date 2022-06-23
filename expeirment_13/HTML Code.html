@@ -1,0 +1,24 @@
+<html> 
+<head> 
+<title>Intranet based LED Control</title> 
+</head> 
+<body> 
+<!-- in the <button> tags below the ID attribute is the value sent to the arduino --> 
+<!-- buttons for pin 11, pin 12, pin13 --> 
+<button id=“11” class=“led”>Toggle Pin 11</button> 
+<button id=“12” class=“led”>Toggle Pin 12</button> 
+<button id=“13” class=“led”>Toggle Pin 13</button> 
+<script src=“jquery-1.10.2.min.js”></script> 
+<script type=“text/javascript”>
+$ (document).ready (function() { 
+//alert (“inside ready”); 
+}); 
+$ (“.led”).click (function() { 
+var p = $ (this).attr (‘id’); // get id value (pin13, pin12, or pin11) 
+// alert (p); 
+// send HTTP GET request to the IP address with the parameter 
+//“pin” and value“p”, then execute the function 
+$.get (“http://192.168.43.139:80/”, {pin:p}); // execute get req. }); 
+</script> 
+</body>
+ </html>
